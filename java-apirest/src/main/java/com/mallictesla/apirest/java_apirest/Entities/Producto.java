@@ -5,6 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+// aca iría los modelos
 @Entity
 public class Producto {
     // estos decoradores son para generar un id auto incremental
