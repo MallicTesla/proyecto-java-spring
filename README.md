@@ -6,6 +6,4 @@ dentro de la carpeta Entities que representa a los objetos y encapsula los datos
 dentro de la carpeta Repositories son componentes que van a interactuar con la capa de persistencia permitiendo hacer un CRUD
 dentro de la carpeta Controllers van las rutas HTTP
 
-
-
-
+en main/resources dentro del archivo application.properties se configura la propiedades para mapear la base de datos 
