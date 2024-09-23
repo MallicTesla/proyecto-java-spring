@@ -1,0 +1,20 @@
+version: "4.34.1"
+
+services:
+  postgres:
+    image: postgres:latest
+    restart: aliways
+
+    environt:
+      # aca van las variables de entorno 
+      POSTGRES_USER: ${SPRING_DATASOURCE_USERNAME}
+      POSTGRES_PASSWORD: ${SPRING_DATASOURCE_PASSWORD}
+      POSTGRES_DB: ${SPRING_DATASOURCE_DB}
+
+    ports:
+      # se asigna el puerto 5432 al puerto 5432 de la base de datos
+      - "5432:5432"
+
+    volumes:
+      # la ruta donde se crea la base de datos
+      - ./postgrest:/var/lib/postgrest/data
