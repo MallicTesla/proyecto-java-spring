@@ -1,11 +1,9 @@
-version: "4.34.1"
-
 services:
   postgres:
     image: postgres:latest
-    restart: aliways
+    restart: always
 
-    environt:
+    environment:
       # aca van las variables de entorno 
       POSTGRES_USER: ${SPRING_DATASOURCE_USERNAME}
       POSTGRES_PASSWORD: ${SPRING_DATASOURCE_PASSWORD}
@@ -17,4 +15,4 @@ services:
 
     volumes:
       # la ruta donde se crea la base de datos
-      - ./postgrest:/var/lib/postgrest/data
+      - ./postgres:/var/lib/postgresql/data
