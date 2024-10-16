@@ -15,4 +15,4 @@ services:
 
     volumes:
       # la ruta donde se crea la base de datos
-      - ./postgres:/var/lib/postgresql/data
+      - ./postgres:/var/lib/postgresql/java
